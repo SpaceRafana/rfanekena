@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Fanekena portfolio",
+      "hasCanvas": false,
+      "bodyTextLen": 1218,
+      "bodyTextHash": "d01d52dd07bf097b779649b6eb07004207448a8385123a563f83bcd4078fef57",
+      "bodyTextPrefix": "Fanekena — portfolio Illustrator Capcut Photoshop FANEKENA Canva",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Fanekena portfolio",
+      "hasCanvas": false,
+      "bodyTextLen": 1218,
+      "bodyTextHash": "d01d52dd07bf097b779649b6eb07004207448a8385123a563f83bcd4078fef57",
+      "bodyTextPrefix": "Fanekena — portfolio Illustrator Capcut Photoshop FANEKENA Canva",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
