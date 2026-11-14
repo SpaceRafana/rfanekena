@@ -83,10 +83,10 @@ export const items: SceneItem[] = [
     "w": 68.76,
     "h": 20.97,
     "z": 5,
-    "text": "Capcut",
+    "text": "CapCut",
     "parts": [
       {
-        "t": "Capcut"
+        "t": "CapCut"
       }
     ],
     "color": "#ffffff",
@@ -226,10 +226,10 @@ export const items: SceneItem[] = [
     "w": 742.3,
     "h": 63.55,
     "z": 13,
-    "text": "La création visuelle est ma passion, avec 2 ans d'expérience en design graphique et \nen gestion de contenus digitaux.\nDiplômé de licence en communication audiovisuelle et numérique",
+    "text": "La création visuelle est ma passion, avec 2 ans d'expérience en design graphique et en gestion de contenus digitaux.\nTitulaire d'une licence en communication audiovisuelle et numérique.",
     "parts": [
       {
-        "t": "La création visuelle est ma passion, avec 2 ans d'expérience en design graphique et \nen gestion de contenus digitaux.\nDiplômé de licence en communication audiovisuelle et numérique"
+        "t": "La création visuelle est ma passion, avec 2 ans d'expérience en design graphique et en gestion de contenus digitaux.\nTitulaire d'une licence en communication audiovisuelle et numérique."
       }
     ],
     "color": "#ffffff",
@@ -565,9 +565,9 @@ export const items: SceneItem[] = [
   },
   {
     "kind": "text",
-    "x": 566.77,
+    "x": 520.77,
     "y": 2584.82,
-    "w": 232.47,
+    "w": 324.47,
     "h": 26.68,
     "z": 34,
     "text": "vidÉoS personNelS",
@@ -672,7 +672,7 @@ export const items: SceneItem[] = [
     "kind": "text",
     "x": 963.32,
     "y": 3355.65,
-    "w": 143.43,
+    "w": 220.43,
     "h": 21.56,
     "z": 39,
     "text": "+261 32 46 819 48",
