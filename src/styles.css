@@ -246,3 +246,76 @@
   .fk *, .fk *::before, .fk *::after { animation: none !important; transition: none !important; }
   .rv { opacity: 1; transform: none; }
 }
+
+/* ===== φ typography layer (golden ratio 1.618) =====
+   Type scale  : 10 · 13 · 16 · 26 · 42 · 68 · 110 · 178 (base 16 × φⁿ)
+   Spacing     : Fibonacci 8 · 13 · 21 · 34 · 55 · 89 · 144
+   Line height : body 1.618 · lead 1.382 · titles 1 / 1.118
+   Line length : (16 × φ)² ≈ 670 px for 16 px text, ≈ 42 em max */
+.fk {
+  --f1: 10px; --f2: 13px; --f3: 16px; --f4: 26px; --f5: 42px; --f6: 68px; --f7: 110px; --f8: 178px;
+  --s1: 8px; --s2: 13px; --s3: 21px; --s4: 34px; --s5: 55px; --s6: 89px; --s7: 144px;
+  font-size: var(--f3);
+  line-height: 1.618;
+}
+/* Level 1 — name */
+.name { font-size: min(var(--f8), 10.4vw); line-height: 1; margin-top: var(--s3) !important; }
+.hi { font-size: var(--f3); padding: var(--s1) var(--s2); }
+.sub { font-size: var(--f4); line-height: 1.382; margin-top: var(--s4) !important; max-width: 26em; margin-left: auto; margin-right: auto; }
+.avail { font-size: var(--f2); padding: var(--s1) var(--s2); }
+.cube-label, .scroll { font-size: var(--f2); }
+
+/* Level 2 — section titles */
+.sec { padding-top: var(--s7); }
+.st .k { font-size: var(--f3); letter-spacing: .25em; }
+.st h2 { font-size: var(--f6); line-height: 1; margin-top: var(--s2); }
+.st p { font-size: var(--f3); line-height: 1.618; max-width: 670px; margin-top: var(--s3); }
+.carou { margin-top: var(--s5); }
+.chips { margin-top: var(--s4); gap: var(--s2); }
+.chip { font-size: var(--f3); }
+
+/* Level 3 — lead text */
+.about { margin-top: var(--s6); }
+.bio { font-size: var(--f4); line-height: 1.382; max-width: 26em; margin-bottom: var(--s5) !important; }
+.tiles { gap: var(--s3); }
+.tile { padding: var(--s4); }
+.tile b { font-size: var(--f5); line-height: 1; }
+.tile span { display: block; font-size: var(--f3); line-height: 1.382; margin-top: var(--s2); }
+
+/* videos: text left-aligned, 670px measure */
+.vtexts { margin-top: var(--s5); gap: var(--s5); max-width: 1296px; }
+.vtexts h3 { font-size: var(--f4); line-height: 1.118; margin-bottom: var(--s3); gap: var(--s2); }
+.vtexts p { font-size: var(--f3); line-height: 1.618; max-width: 670px; }
+.cd .lab { font-size: var(--f3); padding: var(--s2) var(--s3); }
+.pf .tg { font-size: var(--f2); }
+
+/* contact */
+.ct { margin-top: var(--s7); }
+.card3 { padding: var(--s6); gap: var(--s5); grid-template-columns: 1.618fr 1fr; }
+.card3 h2 { font-size: var(--f6); line-height: 1; }
+.card3 p { font-size: var(--f4); line-height: 1.382; margin-top: var(--s4); max-width: 26em; }
+.cl a { font-size: var(--f3); padding: var(--s3) var(--s4); margin-bottom: var(--s2); gap: var(--s2); border-radius: var(--s3); }
+.foot { padding: var(--s6) clamp(21px, 5vw, 89px) var(--s4); font-size: var(--f2); }
+.foot .arc { font-size: var(--f2); }
+
+/* tablet: scale steps down one φ level */
+@media (max-width: 1100px) {
+  .st h2, .card3 h2 { font-size: var(--f5); }
+  .card3 { padding: var(--s5); }
+}
+@media (max-width: 820px) {
+  .sec { padding-top: var(--s6); }
+  .ct { margin-top: var(--s6); }
+  .card3 { grid-template-columns: 1fr; gap: var(--s4); }
+}
+/* phone: 16 → body, 21 lead (Fibonacci), 42 titles */
+@media (max-width: 520px) {
+  .sub, .bio, .card3 p { font-size: 21px; }
+  .name { font-size: min(var(--f7), 10.6vw); }
+  .vtexts h3 { font-size: var(--f3); }
+  .tile { padding: var(--s3); }
+  .tile b { font-size: var(--f4); }
+  .card3 { padding: var(--s3); }
+  .card3 h2 { font-size: 34px; }
+  .cl a { padding: var(--s2); }
+}
